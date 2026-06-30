@@ -1,0 +1,17 @@
+#define XAXA A5
+#define FAFA A3
+void setup()
+{
+  pinMode(XAXA, INPUT);
+  pinMode(FAFA, INPUT);
+  Serial.begin(3600);
+}
+
+void loop()
+{
+  float Humedad = analogRead(XAXA);
+  // Serial.println(Humedad);
+  
+  float Flexible = analogRead(FAFA);
+  Serial.println(Flexible);
+}
